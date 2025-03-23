@@ -1,0 +1,22 @@
+version: "1.0"
+description: "Configuration for data analysis"
+data_sources:
+  - name: "TemperatureSensor"
+    type: "API"
+    url: "http://example.com/temperature"
+    metadata:
+      location: "Room 101"
+      units: "Celsius"
+    time_series:
+      - timestamp: "2023-10-26 00:00:00"
+        value: 22.5
+      - timestamp: "2023-10-26 01:00:00"
+        value: 23.0
+      - timestamp: "2023-10-26 02:00:00"
+        value: 22.8
+  - name: "HumiditySensor"
+    type: "File"
+    url: "/path/to/humidity.csv"
+    metadata:
+      location: "Room 101"
+      units: "Percent"

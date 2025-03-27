@@ -1,11 +1,8 @@
 import miniaudio
 import array
 
-import pyaudio
-import numpy as np
 import whisper
 import subprocess
-import wave
 import webbrowser
 
 import pymorphy3
